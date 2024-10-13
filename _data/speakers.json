@@ -1,198 +1,88 @@
 [
   {
-    "id": 1,
-    "speakers": [
-      {
-        "name": "Mit Shah",
-        "class": "WG21",
-        "pic": "Mit_Shah.jpg",
-        "linkedin" : "https://www.linkedin.com/in/mit-s-13b7661b/"
-      },
-      {
-        "name": "Sarah Mayner",
-        "class": "WG21",
-        "pic": "Sarah_Mayner.jpg",
-        "linkedin" : "https://www.linkedin.com/in/sarah-mayner/"
-      },
-      {
-        "name": "Laural Knebel",
-        "class": "WG21",
-        "pic": "Laura_Knebel.jpg",
-        "linkedin": "https://www.linkedin.com/in/laura-knebel95/"
-      }
-    ],
-    "time": "",
-    "slides": "1_Mayner_Shah_Knebel_STAT701_DSL_Presentation.pdf",
-    "title": "Who's watching you? An analysis of mobile app trackers",
-    "abstract": "Over the years, the number of third party trackers embedded in mobile applications (App store/Google Play store) has exploded. These trackers not only track users' online activity and behavior, but also offline movements and activity. The goal of our project is to create a framework and identify categories of apps that collect an unnecessary amount of data on users. Our hope is that this work will allow privacy-conscious smartphone users to make more informed app choices and that it may enlighten future policy decisions."
+    "name": "Susan Murphy",
+    "year": "2024",
+    "affiliation": "Havard University",
+    "bio": "Susan Murphy is Professor of Statistics at Harvard University, Radcliffe Alumnae Professor at the Radcliffe Institute, Harvard University, and Professor of Computer Science at the Harvard John A. Paulson School of Engineering and Applied Sciences. Her lab works on clinical trial designs and online learning algorithms in sequential decision making, in particular in the area of digital health. She developed the micro-randomized trial for use in constructing mobile health interventions which is in use across a broad range of health- related areas. She is a 2013 MacArthur Fellow, a member of the National Academy of Sciences and the National Academy of Medicine, both of the US National Academies. She is a Past-President of the Institute of Mathematical Statistics and of the Bernoulli Society and a former editor of the Annals of Statistics. She is a prior recipient of the RA Fisher Award from the Committee of Presidents of Statistical Societies (COPSS) and the Guy Medal in Silver from the Royal Statistical Society.",
+    "lectures": [
+    ]
   },
   {
-    "id": 2,
-    "speakers": [
+    "name": "David Donoho",
+    "year": "2023",
+    "affiliation": "Stanford University",
+    "bio": "David Donoho has studied the exploitation of sparse signals in signal recovery, including for denoising, superresolution, and solution of underdetermined equations. His research with collaborators showed that ell-1 penalization was an effective and even optimal way to exploit sparsity of the object to be recovered. He coined the notion of compressed sensing which has impacted many scientific and technical fields, including magnetic resonance imaging in medicine, where it has been implemented in FDA-approved medical imaging protocols and is already used in millions of actual patient MRIs.<br><br> In recent years David and his postdocs and students have been studying large-scale covariance matrix estimation, large-scale matrix denoising, detection of rare and weak signals among many pure noise non-signals, compressed sensing and related scientific imaging problems, and most recently, empirical deep learning.",
+    "lectures": [
       {
-        "name": "Shaolong Wu",
-        "class": "W23 GEN23",
-        "pic": "Shaolong_Wu.jpeg",
-        "linkedin" : "https://www.linkedin.com/in/shaolong-lorry-wu/"
+        "id": 1, 
+        "title": "Data Science vs Statistics",
+        "date": "April 23, 2024",
+        "abstract": "A conventional narrative tells us that Data Science is just a rebranding of traditional statistics. This talk explores the idea that there is a “Data Science” mindset derived from modern digital life, and a “Statistics Mindset” derived from long intellectual tradition. These mindsets breed two completely different mental realities ie. different thoughts we can hold in mind and pay attention to. Because of this, there is a gaping divide between what residents of each mental reality can focus upon, produce and value. Downstream of this, two completely separate discourses and cultures are developing.<br><br> In our view, the two sides don’t properly understand that there are two sides, and that severe challenges are caused by this split. This shows up when each camp reflects on the other in frequent frustration, pointless conversations and negative emotions. This can be seen in situations where teams from each side of the divide both do research about the same topic, and try to engage with each other's research. <br><br> It is important for the statistics tradition to drop the blinders and see the situation clearly, to finally benefit from the existence of the data science reality. Similarly, data science could make better progress by clearly understanding what the statistics tradition can offer.<br><br> Finally, the biggest opportunities will come for those who can become bicultural. The talk should be accessible to a broader audience. This is joint work with Matan Gavish (Hebrew University CS)."
       },
       {
-        "name": "Yuzhou Lin",
-        "class": "C22 GEN22",
-        "pic": "Yuzhou_Lin.jpg",
-        "linkedin" : "https://www.linkedin.com/in/yuzhou-lin-806b3a174/"
+        "id": 2, 
+        "title": "Widespread Panic over Model Collapse",
+        "date": "April 24, 2024",
+        "abstract": "Modern ML systems are extraordinarily data hungry; and some major commercial players are said to now be using synthetic data to train their most ambitious ML systems. Also, AI-generated data will soon flood the internet, perhaps to the point where most available data are synthetic. Recently ML research has started to confront the larger issues that synthetic data might pose, including a future where most or all of the data available for an ML training are synthetic. A number of ML papers became prominent after promoting the idea of “model collapse”, the “curse of recursion”, “model autophagy disorder”. Featuring experiments and some very basic theoretical argumentation they promoted a storyline where successive recycling of purely synthetic data led to model degeneration. <br><br>In contrast, Mathematical Scientists have looked at the same setting as the ML researchers, and developed a more balanced view of the situation, depending on the synthetic data use case, no such collapse occurs. Empirical work with canonical LLMs and diffusion models confirms the absence of collapse, in the recommended use case. <br><br>I will review the setting, the narrative promoting to panic and counter narratives leading to a calmer view. The talk should be accessible to a broader audience, as most of the research in this area consists of analysis at the statistics undergraduate major or master’s level — although one could transplant the basic questions into fancier settings if one liked. <br><br> This is joint work with Apratim Dey of Stanford Statistics and a CS team at Stanford."
       },
       {
-        "name": "Lingqi Zhang",
-        "class": "PhD SAS",
-        "pic": "Lingqi_Zhang.jpeg",
-        "linkedin" : "https://lingqiz.github.io/"
+        "id": 3, 
+        "title": "Optimal Vector Sensing by Stein Shrinkage",
+        "date": "April 25, 2024",
+        "abstract": "We review some Compressed Sensing theory through the lens of Approximate Message Passing, and minimax decision theory concerning shrinkage estimates. AMP powers up a simple estimator for an elementary problem into a procedure for a drastically more ambitious problem of compressed sensing. In this case the simple estimator is James-Stein shrinkage and we use it to construct a procedure of multiple measurement vector compressed sensing. <br><br> We discuss the State Evolution analysis of this procedure, prove and empirically verify all the predictions of state evolution, and so on. We discuss the state evolution theory of Compressed Sensing in the sense of sparsity-undersampling phase diagram. In the large dimensional limit both in system size and vector size, with Gaussian sensing matrices, James-Stein has a theoretically unimprovable phase diagram and empirically works near-optimally even in low vector dimensions. In particular this is far better than the convex optimization approaches. <br><br> This is joint work with Apratim Dey (Stanford Statistics)."
       }
-    ],
-    "time": "",
-    "slides": "2_Wu_Lin_Zhang_Cortex.pdf",
-    "title": "\"Mind Reading\": Decode Visual Images from Brain Activities",
-    "abstract": "Advance in techniques for measuring brain activities, such as functional Magnetic Resonance Imaging (fMRI), has allowed for valuable insight into how neural activities is connected to our behavior. Previously it has been shown, by building forward models of visual cortical responses to natural images, researchers can achieve “mind-reading”, identifying the images viewed by human subjects directly from their neural responses.\n\nOur project proposes to extend their original analysis with the recent advances in deep neural networks, which has been the gold standard for image processing related tasks. The specific aims for our projects are the following:\n\n1. First perform exploratory data analysis, and use traditional methods, to help us better understand the function and organization of visual cortex.\n\n2.Build and train a convolution neural network that aims to predict the pattern of brain responses, given natural images. With a properly trained and regularized network, we should be able to outperform the original method, which uses hand-designed feature.\n\nOur project will help gain additional insight into the mechanism of visual system, which will be important for both build system of computer vision, and cure diseases related to vision."
+    ]
   },
   {
-    "id": 3,
-    "speakers": [
+    "name": "Iain Johnstone",
+    "affiliation": "Stanford University",
+    "bio": "Dr. Johnstone is a statistician with research interests in statistical decision theory and wavelet-like methods (and their uses) in estimation theory, asymptotics and application areas such as statistical inverse problems and statistical signal processing. Other interests include simulation methodology, volume tests of significance, hazard rate estimation and maximum entropy methods.",
+    "year": "2022",
+    "lectures": [
       {
-        "name": "Alex Coble",
-        "class": "PhD Acct 25",
-        "pic": "Alex_Coble.jpg",
-        "linkedin" : "https://www.linkedin.com/in/alex-coble-b42000122/"
+        "id": 1, 
+        "title": "Estimating Sparse Eigenstructure for High Dimensional Data",
+        "date": "November 16, 2022",
+        "abstract": "When data is high dimensional, widely used multivariate methods such as principal component analysis can behave in unexpected ways. Upward bias in sample eigenvalues and inconsistency of sample eigenvectors are among the new phenomena that appear. In this expository overview talk, I will try to use (amateur!) graphics and heuristic arguments to explain how these phenomena arise, and some of the things that can be done in response."
       },
       {
-        "name": "Joe Moran",
-        "class": "PhD Acct 25",
-        "pic": "Joe_Moran.jpg",
-        "linkedin" : "https://www.linkedin.com/in/joe-moran-cpa-86916677/"
+        "id": 2, 
+        "title": "Likelihood Ratios and a Transition from Gaussian to Tracy-Widom",
+        "date": "November 17, 2022",
+        "abstract": "The Tracy-Widom distribution has found broad use in statistical theory and application. We first review some of this, focusing first on Principal Components Analysis and the `spiked model`. When the spike signal is below the Baik-Ben Arous-Peche threshold, likelihood ratio tests for presence of a spike are more efficient than the largest eigenvalue in many settings of multivariate statistics. In recent work in a spiked Wigner model with Egor Klochkov, Alexei Onatski and Damian Pavlyshyn, we study the likelihood ratio test in the transition zone around the BBP threshold, making use of a connection with the spherical Sherrington-Kirkpatrick model and establishing a conjecture of Baik and Lee."
+      },
+      {
+        "id": 3, 
+        "title": "Expectation Propagation in Mixed Models",
+        "date": "November 18, 2022",
+        "abstract": "Matt Wand and colleagues have recently shown that the machine learning technique of expectation propagation (EP) yields state of the art estimation of parameters in generalized linear mixed models. We review this work before asking: are the EP estimators asymptotically efficient? The problem becomes one of defining an appropriate objective function that captures the EP iteration and approximates maximum likelihood well enough to inherit its efficiency. Joint work with the late Peter Hall, Song Mei, and Matt Wand."
       }
-    ],
-    "time": "",
-    "slides": "3_DSL- Coble_Moran.pdf",
-    "github": "https://github.com/jdmoran17/Coble-Moran_571_Project",
-    "title": "Impact of Universities’ Online Covid-19 Dashboards on County Covid Cases",
-    "abstract": "An important issue in accounting research is whether firms’ disclosures, or more broadly, information dissemination, have an impact on individuals’ behavior. One important source of information for college students during the COVID-19 pandemic has been their schools’ COVID-19 dashboards. It is common for schools to provide a live tracker containing information about case rates, testing, vaccinations, policies, etc.; these trackers are considered disclosures in the accounting field as they provide information to stakeholders about schools’ performance in fighting the pandemic. The question we seek to answer is: do schools’ disclosures via their COVID-19 dashboards have a real impact on COVID transmission rates? Using HTML data scraped from schools’ COVID-19 dashboards over the Fall 2020 semester using the Wayback Machine, we will analyze changes in COVID transmission rates in schools’ counties during the week(s) following schools’ disclosures via their dashboards. We will then predict changes in county-level case rate growth using changes in dashboard content, both using a difference-in-differences and an event study design."
+    ]
   },
   {
-    "id": 4,
-    "speakers": [
+    "name": "Jim Berger",
+    "bio": "Berger received his Ph.D. degree in mathematics from Cornell University in 1974. He was a faculty member in the Department of Statistics at Purdue University until 1997, at which time he moved to the Institute of Statistics and Decision Sciences (now the Department of Statistical Science) at Duke University, where he is currently the Arts and Sciences Professor of Statistics. He was the founding director of the Statistical and Applied Mathematical Sciences Institute, serving from 2002-2010.<br><br>Berger was president of the Institute of Mathematical Statistics during 1995-1996, chair of the Section on Bayesian Statistical Science of the American Statistical Association in 1995, and president of the International Society for Bayesian Analysis during 2004. He has been involved with numerous editorial activities, including co-editorship of the Annals of Statistics during the period 1998-2000 and being a founding editor of the Journal on Uncertainty Quantification, serving from 2012-2015.<br><br> Among the awards and honors Berger has received are Guggenheim and Sloan Fellowships, the COPSS President's Award in 1985, the Sigma Xi Research Award at Purdue University for contribution of the year to science in 1993, the COPSS Fisher Lecturer in 2001, the Wald Lecturer of the IMS in 2007 and the Wilks Award from the ASA in 2015. He was elected as foreign member of the Spanish Real Academia de Ciencias in 2002, elected to the USA National Academy of Sciences in 2003, was awarded an honorary Doctor of Science degree from Purdue University in 2004, and became an Honorary Professor at East China Normal University in 2011.<br><br> Berger's research has primarily been in Bayesian statistics, foundations of statistics, statistical decision theory, simulation, model selection, and various interdisciplinary areas of science and industry, including astronomy, geophysics, medicine, and validation of complex computer models. He has supervised 36 Ph.D. dissertations, published over 190 papers and has written or edited 16 books or special volumes.",
+    "affiliation": "Duke University",
+    "year": "2021",
+    "lectures": [
       {
-        "name": "Claire Allen-Platt",
-        "class": "PhD",
-        "pic": "claire_allen-platt.jpg",
-        "linkedin" : "https://www.linkedin.com/in/claireallenplatt/"
+        "id": 1, 
+        "title": "Emulation of Computer Models with Massive Output",
+        "date": "September 8, 2021",
+        "abstract": "Often computer models yield massive output; e.g., a weather model will yield the predicted temperature over a huge grid of points in space and time. Emulation of a computer model is the process of finding an approximation to the computer model that is much faster to run than the computer model itself (which can often take hours or days for a single run). Many successful emulation approaches are statistical in nature. We discuss one such approach – the construction of independent parallel emulators at each grid point – with the emulators being developed through Gaussian processes. The computational simplicity with which this approach can be implemented will be highlighted and the surprising fact that one can ignore spatial structure in the massive output will be explained. All results will be illustrated with a computer model of volcanic pyroclastic flow, the goal being the prediction of hazard probabilities near active volcanoes."
+      },
+      {
+        "id": 2, 
+        "title": "Four Types of Frequentism and Their Interplay with Bayesianism",
+        "date": "September 9, 2021",
+        "abstract": "The majority of statisticians and scientists who use statistics declare themselves to be frequentists, but they typically mean very different things by this declaration. The purpose of this talk is to highlight the major different types of frequentists and to indicate which are compatible with Bayesianism and which are not. The focus is on evaluating common statistical procedures from the different perspectives, primarily from three unconditional frequentist perspectives."
+      },
+      {
+        "id": 3, 
+        "title": "The Conditional Frequentist Principle and Data Dependent Error Probabilities",
+        "date": "September 10, 2021",
+        "abstract": "The majority of statisticians and scientists who use statistics declare themselves to be frequentists, but they typically mean very different things by this declaration. This talk is a continuation of Talk 2 on the subject, with the focus shifting to the conditional frequentist perspective, rather than the unconditional frequentist perspective; it is not necessary to have been at the previous talk to follow this one. Larry Brown’s significant work in this area will be highlighted."
       }
-    ],
-    "time": "",
-    "slides": "4_Claire Allen-Platt_STAT571_DSL_PredictEdOpportunity.pdf",
-    "title": "Predicting educational opportunity: a methods comparison using population data",
-    "abstract": "Reardon (2019) argues that the average standardized test score in a school or district “can be thought of as reflecting the average cumulative set of educational opportunities children in a community have had up to the time when they take a test” (p. 41). The following analysis identifies predictors of average achievement for the population of public elementary and middle schools in the United States. Statistical methods that predict school-level achievement as a binary outcome (above/below the national average), an ordinal outcome (quartiles of achievement relative to a national average), and a continuous outcome (standard deviation units, referenced to a nationwide average) are compared. The goal is to describe methods well-suited to investigating hypotheses about educational opportunity using data that are population level, public use, and aggregate. Data come from the Stanford Education Data Archive (SEDA), which computes a single, pooled achievement estimate across tested grades (3-8), tested subjects (reading and math), and time (10 years, academic years 2008-09 to 2017-18), and places it on a nationally comparable scale, for elementary and middle schools in every public school district in the United States. Candidate predictor variables come from public-use datasets collected by the federal government: the US Census; the American Community Survey; the Civil Rights Data Collection; the School Attendance Boundary Information System, and more, and measure characteristics of schools’ students, teachers, finances, opportunities to learn, discipline practices, neighborhoods, and communities."
-  },
-  {
-    "id": 5,
-    "speakers": [
-      {
-        "name": "Keana Richards",
-        "class": "PhD",
-        "pic": "Keana_Richards.jpg",
-        "linkedin" : "https://linkedin.com/in/keana-richards/"
-      },
-      {
-        "name": "Jeesung Ahn",
-        "class": "PhD",
-        "pic": "Jeesung_Ahn.jpeg",
-        "linkedin" : "linkedin.com/in/jeesung-ahn-025738150"
-      },
-      {
-        "name": "Tonatiuh Salas Ortiz",
-        "class": "W21",
-        "pic": "Tonatiuh_Salas_Ortiz.PNG",
-        "linkedin" : "https://www.linkedin.com/in/tonatiuh-salas-ortiz-b6bb72135/"
-      }
-    ],
-    "time": "",
-    "slides": "5_Richards_Ahn_Salas.pdf",
-    "title": "Recommendations for an intelligent diet",
-    "abstract": "Many countries around the world provide nationwide dietary guidelines to the public and require nutrition labels on food products to help people make informed choices about foods and drinks they consume. Every individual, however, has different nutrition needs and preferences according to their age, sex, ethnicity, height, weight, and physical activity level, among many other factors. Therefore, people may benefit from more personalized dietary recommendations. Our goal is to provide the basis for an algorithm that recommends foods a person should consume based on their nutrition needs. To this end, we will compare different approaches to grouping foods based on their nutrient profiles (i.e., spectrum clustering vs. k-means clustering) and demonstrate how others can use our data-driven food groupings to meet their dietary needs. "
-  },
-  {
-    "id": 6,
-    "speakers": [
-      {
-        "name": "Jonathon Sun",
-        "class": "PhD GSE",
-        "pic": "Jonathon_Sun.jpg",
-        "linkedin" : "https://www.linkedin.com/in/jonathon-sun-2b568640/"
-      },
-      {
-        "name": "Ying Dai",
-        "class": "PhD Nursing",
-        "pic": "Ying_Dai.jpg"
-      },
-      {
-        "name": "Jiayi Zhang",
-        "class": "PhD GSE",
-        "pic": "Jiayi_Zhang.png",
-        "linkedin": "https://www.linkedin.com/in/jzhang7718/"
-      }
-    ],
-    "time": "",
-    "slides": "6_Sun_Dai_Zhang_STAT701.pdf",
-    "title": "#StopAsianHate: Sentiment Analysis of Asian American Tweets During the COVID-19 Pandemic and the Surge of Asian-American Hate Crimes",
-    "abstract": "Asian American hate crimes has been on the rise since the beginning of covid-19 with rhetoric such as Kung-flu and the China virus. Due to the current social climate, twitter data using the search term Asian American is more crucial than ever to understand how Asian Americans are framed within the broader racial context of the United States. As such, the purposes of our final project are to 1) explore how Asian Americans are framed and described in social media during the COVID-19 pandemic; and 2) predict what common words are most likely to increase the likelihood of a tweet going viral on the topics around Asian Americans. Using data from Asian-American related tweets over the past five-months Twitter data between November 30th, 2020 to April 1st, 2021 were collected using a tool called “ If This, Then That (IFTTT)” (https://ifttt.com/). We propose to use text mining, lasso, logistic regression, and random forest to conduct our analysis. Specifically using LASSO and logistic regression to build a “best” model to predict a tweet gets viral and builds a separate model using random forest and other approaches to compare which approach works best."
-  },
-  {
-    "id": 8,
-    "speakers": [
-      {
-        "name": "Jonerik Blank",
-        "class": "WG21",
-        "pic": "Jonerik_Blank.jpg",
-        "linkedin" : "www.linkedin.com/in/jonerikblank"
-      },
-      {
-        "name": "Scott Yang",
-        "class": "WG21 G21",
-        "pic": "Scott_Yang.jpg"
-      },
-      {
-        "name": "Peter Zhang",
-        "class": "W23",
-        "pic": "Peter_Zhang.jpg",
-        "linkedin" : "https://www.linkedin.com/in/peter-zhang-81b529144/"
-      }
-    ],
-    "time": "",
-    "slides": "7_Yang_Blank_Zhang_Animal_Crossing.pdf",
-    "title": "Welcome to the jungle: Making sense of Animal Crossing Reviews",
-    "abstract": "Animal Crossing New Horizons is the latest game in a long standing Nintendo Series. Released near the start of many COVID-19 lockdowns, it offered an outlet for players suddenly stuck indoors and served as a symbol of the video game industry’s continued rise. Even before COVID, the video game industry, worth $60 billion in 2019, had grown over the last 25 years at an annual rate of 9-15% earning while revenues 5x that of the music industry and about the same as the film industry.1 These Animal Crossing players added their reviews and thoughts (eWOM)* to those published by traditional critics such as IGN or Gamespot. A recent academic study examining the effects of extrinsic and intrinsic cues on daily video game sales found that laudatory eWOM had more than twice the positive effect over the next most consequential cue type.2 Clearly managing player and reviewer critical reception is vital to a game’s market performance. Leveraging a dataset comprised of both critical and user reviews, we examine how various NLP methods can be used to produce accurate predictive models for both positive and negative reviews using specific words. Developers could, in the future, use these models during playtesting to gauge the likely critical reception of their title.\n\n*eWOM – electronic word of mouth\n\n1. Merchand, André, and Thorsten Hennig-Thurau. \"Value Creation in the Video Game Industry: Industry Economics, Consumer Benefits, and Research Opportunities.\" Journal of Interactive Marketing 27 (2013): 142. Accessed April 21, 2021. DOI: 10.1016/j.intmar.2013.05.001.\n2. Choi, Hoon S. et al. \"The effect of intrinsic and extrinsic quality cues of digital video games on sales: An empirical investigation.\" Decision Support Systems 106 (February 2018): 92-93. "
-  },
-  {
-    "id": 9,
-    "speakers": [
-      {
-        "name": "Andrew Yu",
-        "class": "W23",
-        "pic": "andrew_yu.jpg",
-        "linkedin": "https://www.linkedin.com/in/andrewdyu/"
-      },
-      {
-        "name": "Norman Chen",
-        "class": "C23",
-        "pic": "norman_chen.jpg",
-        "linkedin" : "https://www.linkedin.com/in/naiming-chen/"
-      },
-      {
-        "name": "Cathy Chen",
-        "class": "ENG23",
-        "pic": "cathy_chen.jpeg",
-        "linkedin": "https://www.linkedin.com/in/cathy-chen-8b5480195/"
-      }
-    ],
-    "time": "",
-    "title": "Strategic Subscriber Segmentation",
-    "abstract": "In the space of content creation, subscribers rule above all else. With the recent wave of venture capital and entrepreneurship-focused content from newsletters to books to podcasts, the startup content creation space is rapidly maturing. Content creators in such niche fields will need to more heavily compete for advertisement deals and sponsorships, and in order to do so, it is imperative that they have a strong grasp of the makeup of their audience. However, most popular content delivery platforms like Substack and Anchor aren’t equipped with the right tools to properly break down the audience in any niche. This makes it hard for creators to curate good content for their audience, and it’s doubly difficult to secure advertisement deals if they can only guess at their audience base. The purpose of this project is to build the foundations for a general model that can bucket subscribers into meaningful groups and demonstrate how content creators can use our model to inform their content and monetization strategy. "
-  }
+    ]
+  } 
 ]

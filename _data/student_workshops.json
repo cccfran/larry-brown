@@ -1,0 +1,84 @@
+[
+  {
+    "year": 2023,
+    "students": [
+      {
+        "name": "Anirban Chatterjee",
+        "title": "Higher Order Graphon Theory",
+        "abstract": "In recent years, exchangeable random graphs have emerged as the mainstay of statistical network analysis. Graphons, central objects in graph limit theory, provide a natural way to sample exchangeable random graphs. It is well known that network moments (motif/subgraph counts) identify a graphon (up to an isomorphism). Hence, understanding the sampling distribution of the subgraph counts in random graphs sampled from a graphon is a pivotal problem in nonparametric network inference. In this work, we derive the joint asymptotic distribution of any finite collection of network moments in random graphs sampled from a graphon, including both the non-degenerate case (with a Gaussian distribution) and the degenerate case (with both Gaussian and non-Gaussian components). Furthermore, we develop a novel multiplier bootstrap for graphons that consistently approximates the limiting distribution of the network moments and uses it to construct joint confidence sets for any finite collection of motif densities. To illustrate the broad scope of our results, we also consider the problem of detecting global structure and propose a consistent test for this problem, invoking celebrated results on quasirandom graphs."
+      },
+      {
+        "name": "Yu Huang",
+        "title": "Accelerating Convergence of Score-Based Diffusion Models, Provably",
+        "abstract": "Score-based diffusion models, while achieving remarkable empirical performance, often suffer from low sampling speed, due to extensive function evaluations needed during the sampling phase. Despite a flurry of recent activities towards speeding up diffusion generative modeling in practice, theoretical underpinnings for acceleration techniques remain severely limited. In this paper, we design novel training-free algorithms to accelerate popular deterministic (i.e., DDIM) and stochastic (i.e., DDPM) samplers. Our accelerated deterministic sampler converges at a rate O(1/T^2) with T the number of steps, improving upon the O(1/T) rate for the DDIM sampler; and our accelerated stochastic sampler converges at a rate O(1/T), outperforming the rate O(1/sqrt(T)) for the DDPM sampler. The design of our algorithms leverages insights from higher-order approximation, and shares similar intuitions as popular high-order ODE solvers like the DPMSolver-2. Our theory accommodates l_2-accurate score estimates, and does not require log-concavity or smoothness on the target distribution."
+      },
+      {
+        "name": "Dongwoo Kim",
+        "winner": true,
+        "title": "Transfer Learning for Functional Mean Estimation: Phase Transition and Adaptive Algorithms",
+        "abstract": "This paper studies transfer learning for estimating the mean of random functions based on discretely sampled data, where, in addition to observations from the target distribution, auxiliary samples from similar but distinct source distributions are available. The paper considers both common and independent designs and establishes the minimax rates of convergence for both designs. The results reveal an interesting phase transition phenomenon under the two designs and demonstrate the benefits of utilizing the source samples in the low sampling frequency regime. For practical applications, this paper proposes novel data-driven adaptive algorithms that attain the optimal rates of convergence within a logarithmic factor simultaneously over a large collection of parameter spaces. The theoretical findings are complemented by a simulation study that further supports the effectiveness of the proposed algorithms."
+      },
+      {
+        "name": "Ziang Niu",
+        "winner": true,
+        "title": "Reconciling Model-x and Doubly Robust Approaches to Conditional Independence Testing",
+        "abstract": "Model-X approaches to testing conditional independence between a predictor and an outcome variable given a vector of covariates usually assume exact knowledge of the conditional distribution of the predictor given the covariates. Nevertheless, model-X methodologies are often deployed with this conditional distribution learned in sample. In this talk, I will present a comprehensive investigation of the consequences of this choice through the lens of the distilled conditional randomization test (dCRT). I will provide a sufficient doubly robust condition for the dCRT to be protected against Type-I error inflation and this motivates a comparison to the generalized covariance measure (GCM) test, another doubly robust conditional independence test. Interestingly, these two tests are asymptotically equivalent, and semiparametric efficiency theory further unveils that the GCM test is optimal against generalized partially linear alternatives. I will comprehensively compare the finite-sample performance between the GCM and the dCRT and present a simple yet useful approach to drastically improve the finite-sample Type-I error control."
+      },
+      {
+        "name": "Xinyu Xie",
+        "title": "Unbiased Watermark for Large Language Models via Importance Sampling",
+        "abstract": "Watermarking language models enables the detection of text generated by these models, offering a crucial tool for distinguishing between human and machine-generated content, thereby enhancing the integrity and trustworthiness of digital communication. We introduce an unbiased version of the watermarking scheme based on the idea of a green/red partition of the token set, by effectively integrating importance sampling into the decoding process. Our theoretical analysis establishes the unbiasedness and asymptotic detection power of this scheme. Experimental results confirm that, compared to previous methods, our technique more effectively preserves the generation distribution while maintaining competitive detection effectiveness under pseudorandomness. Our findings offer a promising direction for watermarking in language models, balancing the need for detectability with minimal impact on text quality."
+      }
+    ]
+  },
+  {
+  "year": 2022,
+  "students": [
+      {
+        "name": "Hongming Pu",
+        "winner": true,
+        "title": "Stochastic Continuum-Armed Bandits with Additive Models: Minimax Regrets and Adaptive Algorithm",
+        "abstract": "We consider d-dimensional stochastic continuum-armed bandits with the expected reward function being additive β-Hölder with sparsity s for 0 < β < ∞ and 1 ≤ s ≤ d. The rate of convergence for the minimax regret is established where T is the number of rounds. In particular, the minimax regret does not depend on d and is linear in s. A novel algorithm is proposed and is shown to be rate-optimal, up to a logarithmic factor of T. The problem of adaptivity is also studied. A lower bound on the cost of adaptation to the smoothness is obtained and the result implies that adaptation for free is impossible in general without further structural assumptions. We then consider adaptive additive SCAB under an additional self-similarity assumption. An adaptive procedure is constructed and is shown to simultaneously achieve the minimax regret for a range of smoothness levels. This is joint work with Dr. Tony Cai."
+      },
+      {
+        "name": "Katherine Brumberg",
+        "winner": true,
+        "title": "Optimal Refinement of Strata to Balance Covariates",
+        "abstract": "What is the best way to split or refine one stratum into two strata if the goal is to maximally reduce the within-stratum imbalance in many covariates? We formulate this problem as an integer program and show how to nearly solve it by randomized rounding of a linear program. A linear program may assign a fraction of a person to one refined stratum and the remainder to the other stratum. Randomized rounding views fractional people as probabilities, assigning intact people to strata using biased coins. Randomized rounding of a linear program is a well-studied theoretical technique for approximating the optimal solution of classes of insoluble (i.e., NP-hard) but amenable integer programs. When the number of people in a stratum is large relative to the number of covariates, we prove the following new results: (i) randomized rounding to split a stratum does very little randomizing, so it closely resembles the unusable linear programming solution that splits intact people, (ii) the unusable linear programming solution and the randomly rounded solution place lower and upper bounds on the unattainable integer programming solution, and because of (i) these bounds are often close, thereby ratifying the usable randomly rounded solution. We illustrate using an observational study that balanced many covariates by forming 1008 matched pairs composed of 2 × 1008 = 2016 patients selected from 5735 using a propensity score. Instead, we: (i) form five strata using the propensity score, (ii) refine them into ten strata, (iii) obtain excellent covariate balance, (iv) retain all 5735 patients. An R package optrefine implements the method. This is joint work with Dr. Dylan Small and Dr. Paul Rosenbaum."
+      },
+      {
+        "name": "Yachong Elsa Yang",
+        "winner": true,
+        "title": "Doubly Robust Prediction under Covariate Shift",
+        "abstract": "Conformal prediction has received tremendous attention in recent years offering new solutions to problems in missing data and causal inference. This work moves beyond the usual assumption that the data are iid (or changeable) and considers the problem of obtaining distribution-free prediction regions accounting for a shift in the distribution of the covariates between the training and test data. Under a standard covariate shift assumption analogous to the missing at random assumption, we propose a general framework to construct well-calibrated prediction regions for the unobserved outcome in the test sample. Our approach is based on the efficient influence function for the quantile of the unobserved outcome in the test population combined with an arbitrary machine learning prediction algorithm, without compromising asymptotic coverage and it is established that the resulting prediction sets eventually attain nominal coverage in large samples. I will further show that in the setting of covariate shift, it is impossible to have any informative result without other knowledge, e.g. how much the shift is, and therefore, asymptotic results are as good as one can hope for. We leverage semiparametric theory so that correct coverage would be guaranteed if either the propensity score or the conditional distribution of the response is estimated sufficiently well, hence 'doubly robust.' I will also discuss how this would extend to constructing doubly robust prediction sets of individual treatment effects, and how aggregation of different algorithms could be leveraged for optimal prediction set. This is joint work with Dr. Arun Kuchibhotla and Dr. Eric Tchetgen Tchetgen."
+      }
+    ]
+  },
+  {
+  "year": 2021,
+  "students": [
+      {
+        "name": "Bo Zhang",
+        "title": "Social Distancing and Covid-19: Randomization Inference for a Structured Dose-Response Relationship",
+        "abstract": "Social distancing is widely acknowledged as an effective public health policy combating the novel coronavirus. But extreme forms of social distancing like isolation and quarantine have costs and it is not clear how much social distancing is needed to achieve public health effects. In this article, we develop a design-based framework to test the causal null hypothesis and make inference about the dose-response relationship between reduction in social mobility and COVID-19 related public health outcomes. We first discuss how to embed observational data with a time-independent, continuous treatment dose into an approximate randomized experiment, and develop a randomization-based procedure that tests if a structured dose-response relationship fits the data. We then generalize the design and testing procedure to accommodate a time-dependent treatment dose in a longitudinal setting. Finally, we apply the proposed design and testing procedures to investigate the effect of social distancing during the phased reopening in the United States on public health outcomes using data compiled from sources including Unacast™, the United States Census Bureau, and the County Health Rankings and Roadmaps Program. We rejected a primary analysis null hypothesis that stated the social distancing from April 27, 2020, to June 28, 2020, had no effect on the COVID-19-related death toll from June 29, 2020, to August 2, 2020 (p-value < 0.001), and found that it took more reduction in mobility to prevent exponential growth in case numbers for non-rural counties compared to rural counties."
+      },
+      {
+        "name": "Yichen Wang",
+        "winner": true,
+        "title": "The Cost of Privacy in Generalized Linear Models: Algorithms and Minimax Lower Bounds",
+        "abstract": "In this paper, we propose differentially private algorithms for parameter estimation in both low-dimensional and high-dimensional sparse generalized linear models (GLMs) by constructing private versions of projected gradient descent. We show that the proposed algorithms are nearly rate-optimal by characterizing their statistical performance and establishing privacy-constrained minimax lower bounds for GLMs. The lower bounds are obtained via a novel technique, which is based on Stein’s Lemma and generalizes the tracing attack technique for privacy-constrained lower bounds. This lower bound argument can be of independent interest as it is applicable to general parametric models. Simulated and real data experiments are conducted to demonstrate the numerical performance of our algorithms."
+      },
+      {
+        "name": "Emily Diana and Saeed Sharifi-Malvajerdi",
+        "title": "Multiaccurate Proxies for Downstream Fairness",
+        "abstract": "We study the problem of training a model that must obey demographic fairness conditions when the sensitive features are not available at training time — in other words, how can we train a model to be fair by race when we don’t have data about race? We adopt a fairness pipeline perspective, in which an “upstream” learner that does have access to the sensitive features will learn a proxy model for these features from the other attributes. The goal of the proxy is to allow a general “downstream” learner — with minimal assumptions on their prediction task — to be able to use the proxy to train a model that is fair with respect to the true sensitive features. We show that obeying multiaccuracy constraints with respect to the downstream model class suffices for this purpose, and provide sample- and oracle efficient algorithms and generalization bounds for learning such proxies. In general, multiaccuracy can be much easier to satisfy than classification accuracy, and can be satisfied even when the sensitive features are hard to predict."
+      },
+      {
+        "name": "Siyu Heng",
+        "winner": true,
+        "title": "Increasing Power for Observational Studies of Aberrant Response: An Adaptive Approach",
+        "abstract": "In many observational studies, the interest is in the effect of treatment on bad, aberrant outcomes rather than the average outcome. For such settings, the traditional approach is to define a dichotomous outcome indicating aberration from a continuous score and use the Mantel-Haenszel test with matched data. For example, studies of determinants of poor child growth use the World Health Organization’s definition of child stunting being height-for-age z-score ≤ -2. The traditional approach may lose power because it discards potentially useful information about the severity of aberration. We develop an adaptive approach that makes use of this information and asymptotically dominates the traditional approach. We develop our approach in two parts. First, we develop an aberrant rank approach in matched observational studies and prove a novel design sensitivity formula enabling its asymptotic comparison with the Mantel-Haenszel test under various settings. Second, we develop a new, general adaptive approach, the two-stage programming method, and use it to adaptively combine the aberrant rank test and the Mantel-Haenszel test. We apply our approach to a study of the effect of teenage pregnancy on stunting."
+      }
+    ]
+  }
+]

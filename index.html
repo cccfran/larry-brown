@@ -1,7 +1,7 @@
 ---
 layout: index
-title: Modern Data Mining
-tagline: Modern Data Mining
+title: Larry Brown
+tagline: Distinguished Lectures and Student Workshops
 css: 
 js: sliders.js
 keywords: helium, jekyll, bootstrap, UI, kit
@@ -13,6 +13,7 @@ keywords: helium, jekyll, bootstrap, UI, kit
       <div id="headers">
         <!-- Light header -->
         <header id="header-style-1">
+          <div class="header-dsl6">
           <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
             <div class="container">
               <a class="navbar-brand" href="index.html"><img src="{{ BASE_PATH }}/assets/images/Wharton.png" alt=""></a>
@@ -24,19 +25,11 @@ keywords: helium, jekyll, bootstrap, UI, kit
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#speakers">Distinguished Lecture</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="dsl9.html">DSL</a>
+                    <a class="nav-link" href="#students">Student Workshop</a>
                   </li>
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Item</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li> -->
                 </ul>
               </div>
             </div>
@@ -46,106 +39,257 @@ keywords: helium, jekyll, bootstrap, UI, kit
             <div class="header-caption">
               <div class="row justify-content-center">
                 <div class="col-10 col-md-12 header-content">
+                  <div class="mb-100"></div>
                   <div class="row justify-content-center">
+                    <!-- <div class="col-12">
+                      <h4 class="header-title animated fadeIn"  style="margin-bottom:55px">WHARTON GLOBAL YOUTH PROGRAM<br>PROF. LINDA ZHAO PRESENTS</h4>
+                    </div> -->
                     <div class="col-12">
-                      <h1 class="header-title animated fadeInDown" style="text-align:center">Modern Data Mining</h1>
+                      <h1 class="header-title animated fadeInDown" style="text-align:center">Lawrence D. Brown</h1>
                     </div>
                     <div class="col-10">
-                      <h2 class="header-title animated fadeInDown text-info" style="text-align:center">STAT 471/571/701</h2>
+                      <h2 class="header-title animated fadeInDown text-info" style="text-align:center">Distinguished Lectures and Student Workshops</h2>
                     </div>
                   </div>
-
-                  <br>
-
-                  <h3 class="header-title animated fadeIn">Professor Linda Zhao</h3>
-                  
-                  <br>
-
+                  <div class="mb-200"></div>
                   <div class="row justify-content-center">
-                    <div class="col-4 col-md-3">
-                      <h4 class="header-title animated fadeIn text-info" style="margin-top:15px">Spring 2021</h4>
-                      <h4 class="header-title animated fadeIn" style="margin-top:-5px">TR 1:30-3:00pm</h4>
+                    <div class="col-10 col-md-6">
+                      <h4 class="header-title animated fadeIn">Department of Statistics and Data Science</h4>
+                      <h4 class="header-title animated fadeIn">The Wharton School</h4>
+                      <h4 class="header-title animated fadeIn">University of Pennsylvania</h4>
                     </div>
                   </div>
-
-                  <br>
-
-                  <div class="row justify-content-center">
-                    <div class="col-10 col-md-10">
-                      <p class="header-text animated fadeIn" style="font-size:20px; text-align: justify;">Statistics has been evolving rapidly in the era of big data and provides tools to harvest knowledge from big data. Focusing on methodologies with reasoning, the class  brings in a large set of cutting edge machine learning techniques with applications. Hands-on data experience with R throughout the semester is another feature. The class will begin with data acquisition and exploratory data analysis (EDA) along with tools for reproducible report, an essential part of data science. We next show how to build, interpret, and adopt basic models; then go beyond to contemporary methods and techniques for handling large and complex data with applications in finance, marketing, medical fields, social science, entertainment, you name it. While this course extensively uses the statistical programming language R, no programming experience is required. By the end of the semester, students will master popular modern statistical methods but also get equipped with hands-on skills in handling data of essentially any size. </p>
+                  <div class="mb-100"></div>
+                  <!-- <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+                      <h3 class="header-title animated fadeIn">Acknowledgement</h3>
+                      <p class="header-text animated fadeIn" style="font-size:20px">Jeff Cai, Neil Fasching, <br>Timothy Dorr, Richard Patti</p>
                     </div>
-                  </div>
-
+                  </div> -->
+                  <!-- <div class="mb-300"></div> -->
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </header>
       </div>
       <!-- Headers End -->
 
-      <!-- facts 4col -->
-      <section id="facts">
+      <div class="header-style-3">
+        <!-- start keynote -->
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-center text-center">
+            <div class="col-10 col-sm-10 col-md-12">
+              <div class="hero-content-v2">
+                <div class="page-header-title">
+                  <h2 class="heading-title text-center" style="color:white">Distinguished Lectures</h2>
+                </div>
+                <!-- Speakers Carousel -->
+                <section class="blog">
+                  <div class="container">
+                    <div id="posts-carousel" class="owl-carousel">
+                      {% assign speakers = site.data.speakers %}
+                      {% for speaker in speakers %}
+                      <div class="blog block carousel-post text-center">
+                        <p><strong> {{ speaker.year }} </strong></p>
+                        <img 
+                          src="{{ BASE_PATH }}/assets/images/headshots/{{ speaker.name | downcase | replace: ' ', '_' }}.jpg" 
+                          alt="{{ speaker.name }}" 
+                          >
+                        <h5></h5>
+                        <p><strong>{{ speaker.name }}</strong><br>{{ speaker.affiliation }}</p>
+                        <!-- <a href="#">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a> -->
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </section>
+                <!-- End Speaker Lectures Carousel -->
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 col-sm-10 col-md-8">
+            <div class="hero-content-v2">
+              <br>
+              <div class="mb-100"></div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- end keynote -->
+      </div>
+
+
+
+      <div class="tabs-accordions" id="speakers">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-md-3 text-center">
-              <i class="fact-icon fa fa-play"></i>
-              <h3 class="timer" id="coffee" data-to="2013" data-speed="20">2014</h3>
-              <h5 class="fact-title">First Course</h5>
-            </div>
-            <div class="col-sm-6 col-md-3 text-center">
-              <i class="fact-icon fa fa-user"></i>
-              <h3 class="timer" id="websites" data-to="1200" data-speed="200">1200+</h3>
-              <h5 class="fact-title">Students</h5>
-            </div>
-            <div class="col-sm-6 col-md-3 text-center">
-              <i class="fact-icon fa fa-rocket"></i>
-              <h3 class="timer" id="code" data-to="500" data-speed="100">500+</h3>
-              <h5 class="fact-title">Projects</h5>
-            </div>
-            <div class="col-sm-6 col-md-3 text-center">
-              <i class="fact-icon fa fa-heart"></i>
-              <h3 class="timer" id="emails" data-to="234" data-speed="2500">4</h3>
-              <h5 class="fact-title">Data Science Live</h5>
+            <div class="col-md-12">
+              <div id="round-tab">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  {% assign speakers = site.data.speakers | sort: 'year' %}
+                  {% for speaker in speakers %}
+                  <li class="nav-item">
+                    <a 
+                      class="nav-link {% if forloop.first %}active{% endif %}" 
+                      data-toggle="tab" 
+                      href="#tab{{ forloop.index | prepend: '0' }}" 
+                      role="tab">
+                      <div>{{ speaker.name }}</div>
+                      <div>{{ speaker.year }}</div>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="mb-60"></div>
+                  {% for speaker in speakers %}
+                  <div 
+                    class="tab-pane {% if forloop.first %}active{% endif %}" 
+                    id="tab{{ forloop.index | prepend: '0' }}" 
+                    role="tabpanel">
+
+                    <!-- Photo and Bio Row -->
+                    <div class="row align-items-center mb-4">
+                      <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                        <img 
+                          src="{{ BASE_PATH }}/assets/images/headshots/{{ speaker.name | downcase | replace: ' ', '_' }}.jpg" 
+                          alt="{{ speaker.name }}" 
+                          class="img-fluid rounded-circle" 
+                          style="max-width: 250px;">
+                        <h4><br></h4>
+                        <h5>{{ speaker.name }}</h5>
+                        <p>{{ speaker.affiliation }}</p>
+                      </div>
+                      <div class="col-12 col-md-8">
+                        <p>{{ speaker.bio }}</p>
+                      </div>
+                    </div>
+
+                    <!-- Lectures Accordion -->
+                    <div class="row justify-content-center">
+                      <div class="col-sm-12 col-md-11">
+                        {% for lecture in speaker.lectures %}
+                        <div class="panel-group">
+                          <div class="panel">
+                            <div class="panel-heading">
+                              <a class="panel-title collapsed" data-toggle="collapse" href="#panel{{ speaker.year }}_{{ lecture.id }}">
+                                {{ lecture.title }}
+                              </a>
+                              <p class="panel-subtitle">{{ lecture.date }}</p>
+                            </div>
+                            <div id="panel{{ speaker.year }}_{{ lecture.id }}" class="panel-collapse collapse">
+                              <div class="panel-body text-gray">
+                                <p align="justify">{{ lecture.abstract | newline_to_br }}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>    
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-      </section>
-      <!-- End facts 4 col -->
 
-      <!-- testimonials slider -->
-<!--     <div class="container">
-      <h4 class="sub-title">Reviews</h4>
-    </div>
+      <!-- accordions -->
+      <div class="mb-60"></div>
+      
+      <div id="students" class="container">
+        <div class="page-header-title">
+          <h2 class="heading-title text-center">Student Workshops</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-11">
+            <div id="student-workshops">
+              <!-- Nav Tabs for Years -->
+              <ul class="nav nav-tabs" role="tablist">
+                {% assign workshops = site.data.student_workshops %}
+                {% for year_group in workshops %}
+                <li class="nav-item">
+                  <a 
+                    class="nav-link {% if forloop.first %}active{% endif %}" 
+                    data-toggle="tab" 
+                    href="#year{{ year_group.year }}" 
+                    role="tab">
+                    {{ year_group.year }}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
 
-    <div class="single-testimonial-area">
-      <div class="container">
-        <div id="single-testimonial-item" class="owl-carousel"> -->
-          <!-- Single testimonial Item -->
-          <!-- <div class="item">
-            <div class="row justify-content-md-center">
-              <div class="col-md-8 col-xs-12 col-md-auto">
-                <div class="testimonial-inner text-md-center">
-                  <blockquote>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsam, non ut molestiae rerum praesentium repellat debitis iure reiciendis, eius culpa beatae commodi facere ad numquam. Quisquam dignissimos similique sunt iure fugit, omnis vel cupiditate repellendus magni nihil molestiae quam, delectus consequuntur blanditiis modi nostrum?
-                  </blockquote>
-                  <div class="testimonial-images">
-                    <img class="img-circle text-md-center" src="{{ BASE_PATH }}/assets/images/testimonial/img1.jpg" alt="">
-                  </div>
-                  <div class="testimonial-footer">
-                    <i class="fa fa-user"></i> Arman
-                    <a href="#"> UIdeck</a>
+              <!-- Tab Content for Each Year -->
+              <div class="tab-content">
+                {% for year_group in workshops %}
+                <div 
+                  class="tab-pane {% if forloop.first %}active{% endif %}" 
+                  id="year{{ year_group.year }}" 
+                  role="tabpanel">
+
+                  <!-- Winners Section -->
+                  {% assign winners = year_group.students | where: "winner", true %}
+                  {% if winners.size > 0 %}
+                  <h4 class="text-center my-3">Winners</h4>
+                  <ul class="list-unstyled text-center">
+                    {% for student in winners %}
+                    <li><h5><strong>{{ student.name }}</strong></h5></li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                  
+                  <div class="mb-60"></div>
+
+                  
+                  <!-- Accordion for Students within Each Year -->
+                  <div class="panel-group">
+                    {% for student in year_group.students %}
+                    <div class="panel">
+                      <div class="panel-heading">
+                        <a 
+                          class="panel-title collapsed" 
+                          data-toggle="collapse" 
+                          href="#abstract{{ student.name | downcase | replace: ' ', '_' }}" 
+                          role="button" 
+                          aria-expanded="false" 
+                          aria-controls="abstract{{ student.name | downcase | replace: ' ', '_' }}">
+                          <strong>{{ student.name }}</strong>
+                        </a>
+                        <p class="panel-subtitle">{{ student.title }}</p>
+                      </div>
+                      <div 
+                        id="abstract{{ student.name | downcase | replace: ' ', '_' }}" 
+                        class="panel-collapse collapse" 
+                        role="tabpanel">
+                        <div class="panel-body text-gray">
+                          <p align="justify">{{ student.abstract | newline_to_br }}</p>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
                   </div>
                 </div>
+                {% endfor %}
               </div>
             </div>
           </div>
 
         </div>
       </div>
-    </div> -->
-    <!-- end -->
+
+      <!-- accordions end -->
+
       
     
 <!-- Content area end -->
