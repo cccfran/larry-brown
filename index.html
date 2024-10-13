@@ -84,14 +84,28 @@ keywords: helium, jekyll, bootstrap, UI, kit
             <div class="col-10 col-sm-10 col-md-12">
               <div class="hero-content-v2">
                 <h3><strong>Lawrence D. Brown</strong></h3>
-                <p>Lawrence David Brown, the Miers Busch Professor of Statistics at the Wharton School, passed away on February 21, 2018, at the age of 77. Professor Brown was deeply committed to teaching and mentoring, having supervised 37 PhD students, many of whom have become prominent figures in the field of statistics both in the United States and internationally. In 2011, he received the Provost’s Award for Distinguished PhD Teaching and Mentoring, a testament to his dedication.
+                <p><a href='http://www-stat.wharton.upenn.edu/~lbrown/' style="all: unset; font: inherit; color: inherit; text-decoration: underline;">Lawrence David Brown</a>, the Miers Busch Professor of Statistics at the Wharton School, passed away on February 21, 2018, at the age of 77. Dr. Brown was a prolific researcher, publishing five books and more than 170 journal articles. His pioneering work in statistical decision theory and nonparametric function estimation, among other areas, has left an indelible mark on the field. His contributions extended to sequential analysis, foundations of statistical inference, properties of exponential families, interval estimation, bioequivalence, and analysis of census and call center data.
                 </p>
                 <div class="collapse" id="intro">
+                  <p>A member of the National Academy of Sciences and the American Academy of Arts and Sciences, Dr. Brown received numerous honors, including an honorary Doctor of Science degree from Purdue University in 1993, the Wilks Memorial Award from the American Statistical Association in 2002, and the C. R. and B. Rao Prize in 2007. His professional service included serving as president of the Institute of Mathematical Statistics, co-editing The Annals of Statistics, and chairing the NRC Committee on National Statistics from 2010 until his passing in 2018.
+                  </p>
+                  <p>Professor Brown was deeply committed to teaching and mentoring, having supervised 37 PhD students, many of whom have become prominent figures in the field of statistics both in the United States and internationally. In 2011, he received the Provost’s Award for Distinguished PhD Teaching and Mentoring, a testament to his dedication.
+                  </p>
                   <p>Born on December 16, 1940, Dr. Brown graduated from the California Institute of Technology in 1961 and earned his PhD in mathematics from Cornell University in 1964. Before joining the faculty at the University of Pennsylvania, he held positions at the University of California, Berkeley; Cornell University; and Rutgers University.
                   </p>
-                  <p>Dr. Brown was a prolific researcher, publishing five books and more than 170 journal articles. His pioneering work in statistical decision theory and nonparametric function estimation, among other areas, has left an indelible mark on the field. His contributions extended to sequential analysis, foundations of statistical inference, properties of exponential families, interval estimation, bioequivalence, and analysis of census and call center data.
+                  <h4 style="color:white">Annual Events</h4>
+                  <p>
+                  Each November, the Statistics and Data Science Department hosts two main events over the course of one week to honor Professor Brown’s legacy:
                   </p>
-                  <p>A member of the National Academy of Sciences and the American Academy of Arts and Sciences, Dr. Brown received numerous honors, including an honorary Doctor of Science degree from Purdue University in 1993, the Wilks Memorial Award from the American Statistical Association in 2002, and the C. R. and B. Rao Prize in 2007. His professional service included serving as president of the Institute of Mathematical Statistics, co-editing The Annals of Statistics, and chairing the NRC Committee on National Statistics from 2010 until his passing in 2018.
+                  <h5 style="color:white">I. Distinguished Lecture Series</h5>
+                  <p>A committee of three members selects a prominent speaker from the international statistics and data science community to deliver two to three lectures. These lectures bring cutting-edge research and insights to the department and the broader academic community.
+                  </p>
+                  <h5 style="color:white">II. Best PhD Student Paper Awards</h5>
+                  <p>PhD students within the department are invited to submit their papers for consideration. A committee reviews the submissions and selects four papers to be presented. From these presentations, the committee awards a prize to the best paper(s), funded by the Brown family. This award acknowledges outstanding research contributions from emerging scholars in the field of statistics.
+                  </p>
+                  <h4 style="color:white">IMS Lawrence D. Brown PhD Student Award</h4>
+                  <p>
+                  Additionally, the Institute of Mathematical Statistics (IMS) offers the IMS Lawrence D. Brown PhD Student Award on a larger scale, which is awarded annually to recognize exemplary PhD student work in statistics. For more information on this award, please visit the <a href='https://imstat.org/ims-awards/ims-lawrence-d-brown-ph-d-student-award/' style="all: unset; font: inherit; color: inherit; text-decoration: underline;">IMS website</a>.
                   </p>
                 </div>
                 <button type="button" class="btn std-btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#intro">
@@ -102,17 +116,23 @@ keywords: helium, jekyll, bootstrap, UI, kit
           </div>
         </div>
         <!-- end keynote -->
+        <div class="col-10 col-sm-10 col-md-8">
+          <div class="hero-content-v2">
+            <br>
+            <div class="mb-100"></div>
+          </div>
+        </div>
       </div>
 
 
-      <div class="header-style-3">
+      <div class="header-style-1">
         <!-- start keynote -->
         <div class="container">
           <div class="row d-flex flex-wrap justify-content-center text-center">
             <div class="col-10 col-sm-10 col-md-12">
               <div class="hero-content-v2">
                 <div class="page-header-title">
-                  <h2 class="heading-title text-center" style="color:white">Distinguished Lecture Series</h2>
+                  <h2 class="heading-title text-center">Distinguished Lecture Series</h2>
                 </div>
                 <!-- Speakers Carousel -->
                 <section class="blog">
@@ -122,12 +142,14 @@ keywords: helium, jekyll, bootstrap, UI, kit
                       {% for speaker in speakers %}
                       <div class="blog block carousel-post text-center">
                         <p><strong> {{ speaker.year }} </strong></p>
+                        <a href="{{ speaker.url }}">
                         <img 
                           src="{{ BASE_PATH }}/assets/images/headshots/{{ speaker.name | downcase | replace: ' ', '_' }}.jpg" 
                           alt="{{ speaker.name }}" 
                           >
+                        </a>
                         <h5></h5>
-                        <p><strong>{{ speaker.name }}</strong><br>{{ speaker.affiliation }}</p>
+                        <p><a href="{{ speaker.url }}" style="all: unset; font: inherit; color: inherit;"><strong>{{ speaker.name }}</strong></a><br>{{ speaker.affiliation }}</p>
                         <!-- <a href="#">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a> -->
                       </div>
                       {% endfor %}
@@ -135,17 +157,17 @@ keywords: helium, jekyll, bootstrap, UI, kit
                   </div>
                 </section>
                 <!-- End Speaker Lectures Carousel -->
-
+                <div class="mb-100"></div>
               </div>
             </div>
           </div>
 
-          <div class="col-10 col-sm-10 col-md-8">
+          <!-- <div class="col-10 col-sm-10 col-md-8">
             <div class="hero-content-v2">
               <br>
               <div class="mb-100"></div>
             </div>
-          </div>
+          </div> -->
           
         </div>
         <!-- end keynote -->
@@ -160,7 +182,7 @@ keywords: helium, jekyll, bootstrap, UI, kit
               <div id="round-tab">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                  {% assign speakers = site.data.speakers | sort: 'year' %}
+                  {% assign speakers = site.data.speakers | sort: 'year' | reverse %}
                   {% for speaker in speakers %}
                   <li class="nav-item">
                     <a 

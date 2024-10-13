@@ -3,6 +3,7 @@
     "name": "Susan Murphy",
     "year": "2024",
     "affiliation": "Havard University",
+    "url": "http://people.seas.harvard.edu/~samurphy/",
     "bio": "Susan Murphy is Professor of Statistics at Harvard University, Radcliffe Alumnae Professor at the Radcliffe Institute, Harvard University, and Professor of Computer Science at the Harvard John A. Paulson School of Engineering and Applied Sciences. Her lab works on clinical trial designs and online learning algorithms in sequential decision making, in particular in the area of digital health. She developed the micro-randomized trial for use in constructing mobile health interventions which is in use across a broad range of health- related areas. She is a 2013 MacArthur Fellow, a member of the National Academy of Sciences and the National Academy of Medicine, both of the US National Academies. She is a Past-President of the Institute of Mathematical Statistics and of the Bernoulli Society and a former editor of the Annals of Statistics. She is a prior recipient of the RA Fisher Award from the Committee of Presidents of Statistical Societies (COPSS) and the Guy Medal in Silver from the Royal Statistical Society.",
     "lectures": [
     ]
@@ -11,6 +12,7 @@
     "name": "David Donoho",
     "year": "2023",
     "affiliation": "Stanford University",
+    "url": "https://web.stanford.edu/dept/statistics/cgi-bin/donoho/",
     "bio": "David Donoho has studied the exploitation of sparse signals in signal recovery, including for denoising, superresolution, and solution of underdetermined equations. His research with collaborators showed that ell-1 penalization was an effective and even optimal way to exploit sparsity of the object to be recovered. He coined the notion of compressed sensing which has impacted many scientific and technical fields, including magnetic resonance imaging in medicine, where it has been implemented in FDA-approved medical imaging protocols and is already used in millions of actual patient MRIs.<br><br> In recent years David and his postdocs and students have been studying large-scale covariance matrix estimation, large-scale matrix denoising, detection of rare and weak signals among many pure noise non-signals, compressed sensing and related scientific imaging problems, and most recently, empirical deep learning.",
     "lectures": [
       {
@@ -38,6 +40,7 @@
     "affiliation": "Stanford University",
     "bio": "Dr. Johnstone is a statistician with research interests in statistical decision theory and wavelet-like methods (and their uses) in estimation theory, asymptotics and application areas such as statistical inverse problems and statistical signal processing. Other interests include simulation methodology, volume tests of significance, hazard rate estimation and maximum entropy methods.",
     "year": "2022",
+    "url": "https://imjohnstone.su.domains",
     "lectures": [
       {
         "id": 1, 
@@ -64,6 +67,7 @@
     "bio": "Berger received his Ph.D. degree in mathematics from Cornell University in 1974. He was a faculty member in the Department of Statistics at Purdue University until 1997, at which time he moved to the Institute of Statistics and Decision Sciences (now the Department of Statistical Science) at Duke University, where he is currently the Arts and Sciences Professor of Statistics. He was the founding director of the Statistical and Applied Mathematical Sciences Institute, serving from 2002-2010.<br><br>Berger was president of the Institute of Mathematical Statistics during 1995-1996, chair of the Section on Bayesian Statistical Science of the American Statistical Association in 1995, and president of the International Society for Bayesian Analysis during 2004. He has been involved with numerous editorial activities, including co-editorship of the Annals of Statistics during the period 1998-2000 and being a founding editor of the Journal on Uncertainty Quantification, serving from 2012-2015.<br><br> Among the awards and honors Berger has received are Guggenheim and Sloan Fellowships, the COPSS President's Award in 1985, the Sigma Xi Research Award at Purdue University for contribution of the year to science in 1993, the COPSS Fisher Lecturer in 2001, the Wald Lecturer of the IMS in 2007 and the Wilks Award from the ASA in 2015. He was elected as foreign member of the Spanish Real Academia de Ciencias in 2002, elected to the USA National Academy of Sciences in 2003, was awarded an honorary Doctor of Science degree from Purdue University in 2004, and became an Honorary Professor at East China Normal University in 2011.<br><br> Berger's research has primarily been in Bayesian statistics, foundations of statistics, statistical decision theory, simulation, model selection, and various interdisciplinary areas of science and industry, including astronomy, geophysics, medicine, and validation of complex computer models. He has supervised 36 Ph.D. dissertations, published over 190 papers and has written or edited 16 books or special volumes.",
     "affiliation": "Duke University",
     "year": "2021",
+    "url": "http://www2.stat.duke.edu/~berger/",
     "lectures": [
       {
         "id": 1, 
