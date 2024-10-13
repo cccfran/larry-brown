@@ -4140,6 +4140,29 @@ ul.nav-tabs li a {
 	border-top-left-radius: 0px
 }
 
+/* Make the tabs scrollable horizontally on small screens */
+@media only screen and (max-width: 767px) {
+  .nav-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-item {
+    display: inline-block;
+    flex: none;
+  }
+
+  .nav-tabs::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+  }
+
+  .nav-link {
+    padding: 10px 15px;
+    display: inline-block;
+  }
+}
+
 .tab-content {
 	padding: 15px;
 	border: 1px solid #ddd
