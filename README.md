@@ -1,2 +1,1 @@
-# Modern Data Mining
-## STAT 471/571/701
+# Lawrence D. Brown Distinguished Lectures and Student Workshops
