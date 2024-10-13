@@ -351,6 +351,13 @@ a:focus {
 	background-position: center
 }
 
+/* Media query for phones (up to 767px wide) */
+@media only screen and (max-width: 767px) {
+  #header-style-1 {
+    background-image: url(../images/bg/bg-small.jpg);
+  }
+}
+
 #header-style-1 .header-dsl4 {
 	background-image: url(https://raw.githubusercontent.com/cccfran/modern-data-mining/main/assets/images/bg/dsl4.jpg) !important;
 	-webkit-background-size: cover;
