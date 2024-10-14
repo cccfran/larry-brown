@@ -101,15 +101,16 @@ keywords: helium, jekyll, bootstrap, UI, kit
                   <p>A committee of three members selects a prominent speaker from the international statistics and data science community to deliver two to three lectures. These lectures bring cutting-edge research and insights to the department and the broader academic community.
                   </p>
                   <h5 style="color:white">II. Best PhD Student Paper Awards</h5>
-                  <p>PhD students within the department are invited to submit their papers for consideration. A committee reviews the submissions and selects four papers to be presented. From these presentations, the committee awards a prize to the best paper(s), funded by the Brown family. This award acknowledges outstanding research contributions from emerging scholars in the field of statistics.
+                  <p>PhD students within the department are invited to submit their papers for consideration. A committee reviews the submissions and selects papers to be presented. From these presentations, the committee awards a prize to the best paper(s), funded by the Brown family. This award acknowledges outstanding research contributions from emerging scholars in the field of statistics.
                   </p>
                   <h4 style="color:white">IMS Lawrence D. Brown PhD Student Award</h4>
                   <p>
                   Additionally, the Institute of Mathematical Statistics (IMS) offers the IMS Lawrence D. Brown PhD Student Award on a larger scale, which is awarded annually to recognize exemplary PhD student work in statistics. For more information on this award, please visit the <a href='https://imstat.org/ims-awards/ims-lawrence-d-brown-ph-d-student-award/' style="all: unset; font: inherit; color: inherit; text-decoration: underline;">IMS website</a>.
                   </p>
                 </div>
-                <button type="button" class="btn std-btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#intro">
-                    More
+                <button type="button" class="btn std-btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#intro"  aria-expanded="false"
+  id="toggleButton">
+                    Show More
                 </button>
               </div>
             </div>
@@ -332,3 +333,15 @@ keywords: helium, jekyll, bootstrap, UI, kit
     
 <!-- Content area end -->
 </div>
+
+
+<script>
+  // JavaScript to toggle button text between "More" and "Less"
+  document.getElementById('toggleButton').addEventListener('click', function () {
+    const button = this;
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+    // Toggle the button text
+    button.textContent = isExpanded ? 'Show More' : 'Show Less';
+  });
+</script>
