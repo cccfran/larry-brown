@@ -21,7 +21,7 @@
       {
         "name": "Ziang Niu",
         "winner": true,
-        "title": "Reconciling Model-x and Doubly Robust Approaches to Conditional Independence Testing",
+        "title": "Reconciling Model-X and Doubly Robust Approaches to Conditional Independence Testing",
         "abstract": "Model-X approaches to testing conditional independence between a predictor and an outcome variable given a vector of covariates usually assume exact knowledge of the conditional distribution of the predictor given the covariates. Nevertheless, model-X methodologies are often deployed with this conditional distribution learned in sample. In this talk, I will present a comprehensive investigation of the consequences of this choice through the lens of the distilled conditional randomization test (dCRT). I will provide a sufficient doubly robust condition for the dCRT to be protected against Type-I error inflation and this motivates a comparison to the generalized covariance measure (GCM) test, another doubly robust conditional independence test. Interestingly, these two tests are asymptotically equivalent, and semiparametric efficiency theory further unveils that the GCM test is optimal against generalized partially linear alternatives. I will comprehensively compare the finite-sample performance between the GCM and the dCRT and present a simple yet useful approach to drastically improve the finite-sample Type-I error control."
       },
       {
