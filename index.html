@@ -312,6 +312,12 @@ keywords: helium, jekyll, bootstrap, UI, kit
                         class="panel-collapse collapse" 
                         role="tabpanel">
                         <div class="panel-body text-gray">
+                          {% if student.journal %}
+                            <p>[ <a href="{{ student.journal_url }}" target="_blank">{{ student.journal }}</a> ]
+                          {% endif %}
+                          {% if student.arxiv %}
+                            [ <a href="{{ student.arxiv }}" target="_blank">ArXiv</a> ]</p>
+                          {% endif %}
                           <p align="justify">{{ student.abstract | newline_to_br }}</p>
                         </div>
                       </div>
