@@ -30,7 +30,7 @@
     "name": "David Donoho",
     "year": "2023",
     "affiliation": "Stanford University",
-    "url": "https://web.stanford.edu/dept/statistics/cgi-bin/donoho/",
+    "url": "https://dhsign.su.domains/home/",
     "bio": "David Donoho has studied the exploitation of sparse signals in signal recovery, including for denoising, superresolution, and solution of underdetermined equations. His research with collaborators showed that ell-1 penalization was an effective and even optimal way to exploit sparsity of the object to be recovered. He coined the notion of compressed sensing which has impacted many scientific and technical fields, including magnetic resonance imaging in medicine, where it has been implemented in FDA-approved medical imaging protocols and is already used in millions of actual patient MRIs.<br><br> In recent years David and his postdocs and students have been studying large-scale covariance matrix estimation, large-scale matrix denoising, detection of rare and weak signals among many pure noise non-signals, compressed sensing and related scientific imaging problems, and most recently, empirical deep learning.",
     "lectures": [
       {
