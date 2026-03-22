@@ -1,4 +1,31 @@
 [
+ {
+    "name": "Michael Jordan",
+    "year": "2025",
+    "affiliation": "University of California, Berkeley",
+    "url": "https://people.eecs.berkeley.edu/~jordan/",
+    "bio": "Michael I. Jordan is the Pehong Chen Distinguished Professor in the Department of Electrical Engineering and Computer Science and the Department of Statistics at the University of California, Berkeley. Prof. Jordan is a member of the National Academy of Sciences, a member of the National Academy of Engineering, a member of the American Academy of Arts and Sciences, and a Foreign Member of the Royal Society. He is a Fellow of the American Association for the Advancement of Science. He was the inaugural winner of the World Laureates Association (WLA) Prize in 2022. He received the Ulf Grenander Prize from the American Mathematical Society in 2021, the IEEE John von Neumann Medal in 2020, the IJCAI Research Excellence Award in 2016, the David E. Rumelhart Prize in 2015, and the ACM/AAAI Allen Newell Award in 2009. He gave the Inaugural IMS Grace Wahba Lecture in 2022, the IMS Neyman Lecture in 2011, and an IMS Medallion Lecture in 2004. He was a Plenary Lecturer at the International Congress of Mathematicians in 2018.",
+    "lectures": [
+      {
+        "id": 1, 
+        "title": "A Collectivist, Economic, and Statistical Perspective on AI",
+        "date": "October 1, 2025",
+        "abstract": "Information technology is in the midst of a revolution in which omnipresent data collection and machine learning are impacting the human world as never before. The word "intelligence" is being used as a North Star for the development of this technology, with human cognition viewed as a baseline. This view neglects the fact that humans are social animals, and that much of our intelligence is social and cultural in origin. Thus, a broader framing is to consider the system level, where the agents in the system, be they computers or humans, are active, they are cooperative, and they wish to obtain value from their participation in learning-based systems. Agents may supply data and other resources to the system only if it is in their interest to do so, and they may be honest and cooperative only if it is in their interest to do so. Critically, intelligence inheres as much in the overall system as it does in individual agents. This is a perspective that is familiar in economics, although without the focus on learning algorithms. A key challenge is thus to bring (micro)economic concepts into contact with foundational issues in the computing and statistical sciences. I'll discuss some concrete examples of problems and solutions at this tripartite interface.",
+      },
+      {
+        "id": 2, 
+        "title": "Sequential Hypothesis Tests and Universal Log-Optimality for General Classes of E-processes",
+        "date": "October 2, 2025",
+        "abstract": "We consider the problem of sequential hypothesis testing by betting. For a general class of composite testing problems---which include bounded mean testing, equal mean testing for bounded random tuples, and some key ingredients of two-sample and independence testing as special cases---we show that any e-process satisfying a certain sublinear regret bound is adaptively, asymptotically, and almost surely log-optimal for a composite alternative. This is a strong notion of optimality that has not previously been established for the aforementioned problems and we provide explicit test supermartingales and e-processes satisfying this notion in the more general case. Furthermore, we derive matching lower and upper bounds on the expected rejection time for the resulting sequential tests in all of these cases. The proofs of these results make weak, algorithm-agnostic moment assumptions and rely on a general-purpose proof technique involving the aformentioned regret and a family of numeraire portfolios.",
+      },
+      {
+        "id": 3, 
+        "title": "Explorations in Conformal Prediction: Backward Conformal, Multivariate Conformal, Selection, and Decisions",
+        "date": "October 3,2025",
+        "abstract": "Conformal prediction offers a distribution-free framework for constructing prediction sets with coverage guarantees. The basic theory is limited to marginal coverage, but the promise of conformal prediction hinges on finding approximations to conditional guarantees that are operational in practice, achieving robustness to assumptions, handling multivariate responses, selecting among multiple conformal predictions, and focusing coverage on decision-relevant inference. We discuss progress in all of these areas. Additionally, we present a notion of "backward conformal prediction" in which the size of the prediction set is held fixed and the coverage level is random, arguing that such an inferential concept is relevant in many real-world problems in which people have limited resources to follow up on putative discoveries",
+     }
+    ]
+  },
   {
     "name": "Susan Murphy",
     "year": "2024",
