@@ -4,6 +4,7 @@
     "year": "2025",
     "affiliation": "University of California, Berkeley",
     "url": "https://people.eecs.berkeley.edu/~jordan/",
+    "image_shape": "square",
     "bio": "Michael I. Jordan is the Pehong Chen Distinguished Professor in the Department of Electrical Engineering and Computer Science and the Department of Statistics at the University of California, Berkeley. Prof. Jordan is a member of the National Academy of Sciences, a member of the National Academy of Engineering, a member of the American Academy of Arts and Sciences, and a Foreign Member of the Royal Society. He is a Fellow of the American Association for the Advancement of Science. He was the inaugural winner of the World Laureates Association (WLA) Prize in 2022. He received the Ulf Grenander Prize from the American Mathematical Society in 2021, the IEEE John von Neumann Medal in 2020, the IJCAI Research Excellence Award in 2016, the David E. Rumelhart Prize in 2015, and the ACM/AAAI Allen Newell Award in 2009. He gave the Inaugural IMS Grace Wahba Lecture in 2022, the IMS Neyman Lecture in 2011, and an IMS Medallion Lecture in 2004. He was a Plenary Lecturer at the International Congress of Mathematicians in 2018.",
     "lectures": [
       {
