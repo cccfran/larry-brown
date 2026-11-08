@@ -139,14 +139,15 @@ keywords: helium, jekyll, bootstrap, UI, kit
                 <section class="blog">
                   <div class="container">
                     <div id="posts-carousel" class="owl-carousel">
-                      {% assign speakers = site.data.speakers %}
+                      {% assign speakers = site.data.speakers | sort: 'year' | reverse %}
                       {% for speaker in speakers %}
                       <div class="blog block carousel-post text-center">
                         <p><strong> {{ speaker.year }} </strong></p>
                         <a href="{{ speaker.url }}">
                         <img 
-                          src="{{ BASE_PATH }}/assets/images/headshots/{{ speaker.name | downcase | replace: ' ', '_' }}.jpg" 
-                          alt="{{ speaker.name }}" 
+                          src="{{ BASE_PATH }}/assets/images/headshots/{% if speaker.image %}{{ speaker.image }}{% else %}{{ speaker.name | downcase | replace: ' ', '_' }}.jpg{% endif %}"
+                          alt="{{ speaker.name }}"
+                          {% if speaker.image_shape == 'square' %}class="speaker-portrait-square"{% endif %}
                           >
                         </a>
                         <h5></h5>
@@ -211,9 +212,9 @@ keywords: helium, jekyll, bootstrap, UI, kit
                     <div class="row align-items-center mb-4">
                       <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
                         <img 
-                          src="{{ BASE_PATH }}/assets/images/headshots/{{ speaker.name | downcase | replace: ' ', '_' }}.jpg" 
+                          src="{{ BASE_PATH }}/assets/images/headshots/{% if speaker.image %}{{ speaker.image }}{% else %}{{ speaker.name | downcase | replace: ' ', '_' }}.jpg{% endif %}"
                           alt="{{ speaker.name }}" 
-                          class="img-fluid rounded-circle" 
+                          class="img-fluid {% if speaker.image_shape == 'square' %}speaker-portrait-square{% else %}rounded-circle{% endif %}"
                           style="max-width: 250px;">
                         <h4><br></h4>
                         <h5>{{ speaker.name }}</h5>
@@ -234,7 +235,7 @@ keywords: helium, jekyll, bootstrap, UI, kit
                               <a class="panel-title collapsed" data-toggle="collapse" href="#panel{{ speaker.year }}_{{ lecture.id }}">
                                 {{ lecture.title }}
                               </a>
-                              <p class="panel-subtitle">{{ lecture.date }}</p>
+                              <p class="panel-subtitle">{{ lecture.date }}{% if lecture.time %} &middot; {{ lecture.time }}{% endif %}{% if lecture.location %}<br>Location: {{ lecture.location }}{% endif %}</p>
                             </div>
                             <div id="panel{{ speaker.year }}_{{ lecture.id }}" class="panel-collapse collapse">
                               <div class="panel-body text-gray">

@@ -2953,6 +2953,14 @@ nav#menu span.fa.fa-bars:hover {
 	margin-top: 20px
 }
 
+.speaker-portrait-square {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 0
+}
+
 #single-testimonial-item .item {
 	margin: 10px
 }
